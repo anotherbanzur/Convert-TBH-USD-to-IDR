@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TBH USD ke IDR</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="mark" aria-hidden="true">Rp</div>
+        <div>
+          <h1>TBH USD ke IDR</h1>
+          <p>Konverter harga Wiki Taskbar Hero</p>
+        </div>
+      </header>
+
+      <label class="switch-row">
+        <span>
+          <strong>Aktifkan konversi</strong>
+          <small>Ubah harga dolar pada halaman wiki</small>
+        </span>
+        <input id="enabled" type="checkbox">
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+
+      <section>
+        <span class="label">Sumber kurs</span>
+        <div class="segmented">
+          <label>
+            <input type="radio" name="rateMode" value="auto">
+            <span>Otomatis</span>
+          </label>
+          <label>
+            <input type="radio" name="rateMode" value="manual">
+            <span>Manual</span>
+          </label>
+        </div>
+
+        <label class="field" id="manualField">
+          <span>1 USD sama dengan</span>
+          <div>
+            <span>Rp</span>
+            <input id="manualRate" type="number" min="1" step="1" inputmode="numeric">
+          </div>
+        </label>
+
+        <div class="rate-card">
+          <span>Kurs yang digunakan</span>
+          <strong id="activeRate">—</strong>
+          <small id="rateStatus">Memuat…</small>
+        </div>
+
+        <button id="refresh" type="button">Perbarui kurs sekarang</button>
+      </section>
+
+      <p class="notice" id="notice" role="status"></p>
+      <footer>Perubahan diterapkan langsung pada halaman wiki.</footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
