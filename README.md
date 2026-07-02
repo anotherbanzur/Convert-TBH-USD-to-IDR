@@ -1,30 +1,60 @@
 # TBH USD ke IDR
 
-Ekstensi Chrome Manifest V3 untuk mengubah harga USD menjadi Rupiah pada
-`taskbarhero.wiki`. Ekstensi memproses harga yang sudah ada dan harga baru yang
-dimuat secara dinamis.
+Ekstensi Google Chrome (Manifest V3) untuk mengonversi harga dalam mata uang USD menjadi Rupiah (IDR) pada situs **taskbarhero.wiki**.
 
-Paket siap unggah ke Chrome Web Store tersedia di folder `dist`. Materi listing,
-justifikasi izin, dan petunjuk aset terdapat di `STORE_LISTING.md`.
+Ekstensi ini hanya mengubah tampilan harga di browser dan **tidak mengubah data situs, Steam Market, maupun transaksi apa pun**.
+
+---
+
+## Fitur
+
+- Mengonversi harga USD menjadi Rupiah (IDR).
+- Mendukung pembaruan harga yang dimuat secara dinamis.
+- Kurs dapat diperbarui secara otomatis.
+- Mendukung pengaturan kurs secara manual.
+- Konversi dapat diaktifkan atau dinonaktifkan melalui popup ekstensi.
+
+---
 
 ## Instalasi
 
-1. Buka `chrome://extensions` di Google Chrome.
-2. Aktifkan **Developer mode** di kanan atas.
-3. Klik **Load unpacked**.
+1. Buka halaman `chrome://extensions`.
+2. Aktifkan **Mode Pengembang (Developer Mode)**.
+3. Klik **Muat yang Belum Dipaketkan (Load Unpacked)**.
 4. Pilih folder proyek ini.
-5. Buka atau refresh halaman `https://taskbarhero.wiki/market`.
+5. Buka atau muat ulang halaman `https://taskbarhero.wiki/market`.
 
-Klik ikon ekstensi untuk menyalakan/mematikan konversi, memilih kurs otomatis,
-atau memasukkan kurs manual.
+---
 
-## Kurs
+## Pengaturan Kurs
 
-- Mode otomatis mengambil kurs USD/IDR dari Frankfurter dan memperbaruinya
-  setiap enam jam.
-- Jika jaringan/API gagal, kurs terakhir yang tersimpan tetap digunakan.
-- Kurs awal sebelum pembaruan pertama adalah Rp16.250 per USD.
-- Perubahan kurs dan sakelar diterapkan langsung pada tab wiki yang terbuka.
+- Mode otomatis mengambil kurs USD ke IDR dari layanan penyedia kurs.
+- Kurs diperbarui secara berkala.
+- Jika layanan kurs tidak dapat diakses, ekstensi akan menggunakan kurs terakhir yang tersimpan.
+- Pengguna juga dapat mengatur nilai kurs secara manual.
 
-Ekstensi hanya mengubah tampilan di browser. Data dan transaksi Steam Market
-tidak diubah.
+---
+
+## Disclaimer
+
+Proyek ini merupakan proyek independen dan **tidak berafiliasi, tidak didukung, serta tidak dikelola oleh Task Bar Hero maupun taskbarhero.wiki**.
+
+Ekstensi ini hanya mengubah tampilan harga di browser pengguna untuk mempermudah melihat nilai dalam Rupiah.
+
+Perbedaan nilai konversi dapat terjadi karena perubahan kurs mata uang.
+
+---
+
+## Open Source
+
+Proyek ini bersifat **Open Source**.
+
+Seluruh kode sumber dapat dipelajari, dimodifikasi, maupun dikembangkan lebih lanjut sesuai ketentuan lisensi yang digunakan.
+
+Kontribusi berupa pelaporan bug, usulan fitur, maupun pull request sangat diterima.
+
+---
+
+## Lisensi
+
+MIT License
