@@ -55,6 +55,16 @@ Kontribusi berupa pelaporan bug, usulan fitur, maupun pull request sangat diteri
 
 ---
 
+## Pengembangan
+
+Proyek ini dikembangkan dengan bantuan AI sebagai asisten pengembangan.
+
+AI digunakan untuk membantu proses perancangan, penulisan kode, debugging, refactoring, dan dokumentasi.
+
+Seluruh pengujian, validasi, serta keputusan akhir tetap dilakukan oleh pengembang.
+
+---
+
 ## Lisensi
 
 MIT License
