@@ -69,5 +69,8 @@ Seluruh pengujian, validasi, serta keputusan akhir tetap dilakukan oleh pengemba
 
 MIT License
 
+## Preview
+
 ![Preview](store-assets/promo-440x280.png)
+
 ![Preview](store-assets/screenshot-1280x800.png)
